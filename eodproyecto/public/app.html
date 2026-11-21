@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel · EOD</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@600&display=swap">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/nosotros.css">
+  <link rel="stylesheet" href="css/campanas.css">
+  <link rel="stylesheet" href="css/residuos.css">
+  <link rel="stylesheet" href="css/incentivos.css">
+  <link rel="stylesheet" href="css/gamificacion.css">
+  <link rel="stylesheet" href="css/informes.css">
+  <link rel="stylesheet" href="css/calculadora.css">
+</head>
+<body>
+<div class="shell">
+
+  <aside class="side" id="side">
+    <a class="side-logo" href="#inicio">
+      <img src="img/logo.svg" alt="EOD">
+      <span>Entidad Organizadora<br>de Desechos</span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Módulos"></nav>
+    <div class="side-bottom" id="menuInferior"></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <div class="main">
+    <header class="top">
+      <button class="burger" id="burger" type="button" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input id="buscar" type="search" placeholder="Buscar campañas, instituciones, grupos...">
+      </div>
+      <button class="bell" type="button" id="campana" aria-label="Notificaciones">
+        <svg viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0 1 12 0v6l2 2H4l2-2zM10 21h4"/></svg>
+      </button>
+      <div class="user" id="user">
+        <button type="button" class="user-btn" id="userBtn" aria-haspopup="true">
+          <span class="user-av" id="uAv">E</span>
+          <span class="user-info">
+            <b id="uNombre">…</b>
+            <small id="uRol"></small>
+            <small id="uInst"></small>
+          </span>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="user-menu hidden" id="userMenu">
+          <button type="button" id="clavTop">Cambiar contraseña</button>
+          <button type="button" id="salirTop">Cerrar sesión</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="vista" id="vista" tabindex="-1"></main>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/nosotros.js"></script>
+<script src="js/campanas.js"></script>
+<script src="js/grupos.js"></script>
+<script src="js/instituciones.js"></script>
+<script src="js/residuos.js"></script>
+<script src="js/incentivos.js"></script>
+<script src="js/gamificacion.js"></script>
+<script src="js/informes.js"></script>
+<script src="js/calculadora.js"></script>
+<script src="js/app-shell.js"></script>
+</body>
+</html>

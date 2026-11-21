@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestión de Desechos · EOD</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/nosotros.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="EOD inicio">
+    <img class="brand-mark" src="img/logo.svg" alt="EOD">
+    <span class="brand-text">Entidad<br>Organizadora<br>de Desechos</span>
+  </a>
+  <nav class="nav-links" aria-label="Principal">
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="gestion.html" class="active">Gestión de Desechos</a>
+    <a href="iniciativas.html">Iniciativas</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <button class="nav-user" id="navUser" type="button" aria-label="Cuenta">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+  </button>
+</header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="caneca" viewBox="0 0 54 62">
+    <rect x="3" y="8" width="48" height="8" rx="4" fill="currentColor"/>
+    <rect x="19" y="2" width="16" height="8" rx="3" fill="currentColor" opacity=".75"/>
+    <path d="M7 18h40l-3 40a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4z" fill="currentColor"/>
+    <path d="M20 40l7-7 7 7" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+<main class="pg">
+  <section class="pg-banner">
+    <div class="pg-banner-txt">
+      <svg class="sn-hoja" viewBox="0 0 48 48"><path d="M8 40C6 20 18 6 42 6c0 24-12 36-30 34z" fill="#3f9a45"/><path d="M10 38C18 26 26 18 36 12" fill="none" stroke="#e8f5dd" stroke-width="2" stroke-linecap="round"/></svg>
+      <div>
+        <h1>Gestión de Desechos</h1>
+        <h3>Separar bien es el primer paso</h3>
+        <p>Cada residuo tiene su lugar. Aprende a clasificar tus desechos en las 4 canecas de EOD y descubre cuánto tarda cada material en desaparecer del planeta.</p>
+      </div>
+    </div>
+    <div class="pg-art" aria-hidden="true"><svg viewBox="0 0 280 150"><g><ellipse cx="140" cy="138" rx="120" ry="8" fill="#b9d3a6" opacity=".6"/>
+    <g transform="translate(14 38) scale(1.45)" color="#2f7fd0"><use href="#caneca" width="54" height="62"/></g>
+    <g transform="translate(75 38) scale(1.45)" color="#3a9a4a"><use href="#caneca" width="54" height="62"/></g>
+    <g transform="translate(136 38) scale(1.45)" color="#f0a30a"><use href="#caneca" width="54" height="62"/></g>
+    <g transform="translate(197 38) scale(1.45)" color="#7a5236"><use href="#caneca" width="54" height="62"/></g></g></svg></div>
+  </section>
+
+
+  <section>
+    <div class="pg-cab"><div>
+      <h2 class="pg-titulo">Las 4 canecas de EOD</h2>
+      <p class="pg-sub">Qué sí va, qué no va y cuánto tarda en degradarse cada material.</p>
+    </div></div>
+  </section>
+  <section class="gd-grid" aria-label="Canecas">
+      <article class="gd-card" style="--c:#2f7fd0">
+        <div class="gd-top">
+          <svg class="gd-bin" aria-hidden="true"><use href="#caneca"/></svg>
+          <div><h3>Papel</h3><span>Y cartón</span></div>
+        </div>
+        <div class="gd-body">
+          <div class="gd-si"><h4>Sí va</h4><ul><li>Periódicos, revistas y folletos</li><li>Hojas de cuaderno y de impresora</li><li>Cajas de cartón limpias y secas</li></ul></div>
+          <div class="gd-no"><h4>No va</h4><ul><li>Papel higiénico y servilletas usadas</li><li>Papel con grasa o restos de comida</li><li>Recibos térmicos y papel plastificado</li></ul></div>
+          <div class="gd-dato"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><small>Tarda en degradarse</small><b>De 2 meses a 1 año</b></div></div>
+        </div>
+      </article>
+      <article class="gd-card" style="--c:#3a9a4a">
+        <div class="gd-top">
+          <svg class="gd-bin" aria-hidden="true"><use href="#caneca"/></svg>
+          <div><h3>Vidrio</h3><span>Botellas y frascos</span></div>
+        </div>
+        <div class="gd-body">
+          <div class="gd-si"><h4>Sí va</h4><ul><li>Botellas de bebidas</li><li>Frascos de alimentos, enjuagados</li><li>Frascos de vidrio de cualquier color</li></ul></div>
+          <div class="gd-no"><h4>No va</h4><ul><li>Espejos y vidrios de ventana</li><li>Bombillos y tubos fluorescentes</li><li>Cerámica, porcelana y cristal</li></ul></div>
+          <div class="gd-dato"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><small>Tarda en degradarse</small><b>Miles de años</b></div></div>
+        </div>
+      </article>
+      <article class="gd-card" style="--c:#f0a30a">
+        <div class="gd-top">
+          <svg class="gd-bin" aria-hidden="true"><use href="#caneca"/></svg>
+          <div><h3>Plástico</h3><span>Y empaques</span></div>
+        </div>
+        <div class="gd-body">
+          <div class="gd-si"><h4>Sí va</h4><ul><li>Botellas y envases de bebidas</li><li>Envases de aseo y cuidado personal</li><li>Tapas, vasos y recipientes limpios</li></ul></div>
+          <div class="gd-no"><h4>No va</h4><ul><li>Envases con restos de comida</li><li>Icopor sucio</li><li>Empaques metalizados (papas, galletas)</li></ul></div>
+          <div class="gd-dato"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><small>Tarda en degradarse</small><b>Hasta 500 años</b></div></div>
+        </div>
+      </article>
+      <article class="gd-card" style="--c:#7a5236">
+        <div class="gd-top">
+          <svg class="gd-bin" aria-hidden="true"><use href="#caneca"/></svg>
+          <div><h3>Orgánico</h3><span>Restos biodegradables</span></div>
+        </div>
+        <div class="gd-body">
+          <div class="gd-si"><h4>Sí va</h4><ul><li>Cáscaras de frutas y verduras</li><li>Restos de comida y borra de café</li><li>Hojas, ramas pequeñas y pasto</li></ul></div>
+          <div class="gd-no"><h4>No va</h4><ul><li>Plásticos, vidrio o papel</li><li>Aceites y grasas líquidas</li><li>Cigarrillos y excremento de mascotas</li></ul></div>
+          <div class="gd-dato"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><small>Tarda en degradarse</small><b>De 2 semanas a unos meses</b></div></div>
+        </div>
+      </article>
+  </section>
+  
+
+  <section>
+    <div class="pg-cab"><div>
+      <h2 class="pg-titulo">De tus residuos a tus premios</h2>
+      <p class="pg-sub">Reciclar bien también suma puntos.</p>
+    </div></div>
+  </section>
+  <section class="gd-pasos">
+    <div class="gd-paso"><b>1</b><div><h4>Separa y entrega</h4><p>Clasifica tus residuos en la caneca correcta y entrégalos en tu institución.</p></div></div>
+    <div class="gd-paso"><b>2</b><div><h4>Gana puntos</h4><p>Tu docente registra lo que entregaste y recibes puntos según el tipo y el peso.</p></div></div>
+    <div class="gd-paso"><b>3</b><div><h4>Canjea premios</h4><p>Usa tus puntos en el catálogo de incentivos de tu institución.</p></div></div>
+  </section>
+
+  <div class="cta">
+    <div>
+      <h3>¿Listo para reciclar con EOD?</h3>
+      <p>Crea tu cuenta y empieza a sumar puntos por cada residuo bien clasificado.</p>
+    </div>
+    <div class="cta-btns">
+      <a class="b1" href="index.html#registro">Crear cuenta</a>
+      <a class="b2" href="index.html">Iniciar sesión</a>
+    </div>
+  </div>
+</main>
+
+<script>
+
+  // Si ya hay sesión, el icono de usuario lleva al panel
+  const tk = localStorage.getItem('eod_token') || sessionStorage.getItem('eod_token');
+  document.getElementById('navUser').onclick = () => { location.href = tk ? 'app.html' : 'index.html'; };
+</script>
+</body>
+</html>

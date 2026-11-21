@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre Nosotros · EOD</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/nosotros.css">
+  <style>.pagina{max-width:1180px;margin:0 auto;padding:28px 40px 48px}@media(max-width:960px){.pagina{padding:20px 18px 40px}}</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="EOD inicio">
+    <img class="brand-mark" src="img/logo.svg" alt="EOD">
+    <span class="brand-text">Entidad<br>Organizadora<br>de Desechos</span>
+  </a>
+  <nav class="nav-links" aria-label="Principal">
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html" class="active">Nosotros</a>
+    <a href="gestion.html">Gestión de Desechos</a>
+    <a href="iniciativas.html">Iniciativas</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <button class="nav-user" id="navUser" type="button" aria-label="Cuenta">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+  </button>
+</header>
+
+<main class="pagina">
+  <div id="contenido"></div>
+  <div class="cta" style="margin-top:20px">
+    <div>
+      <h3>¿Listo para ser parte del cambio?</h3>
+      <p>Crea tu cuenta y empieza a sumar puntos por reciclar.</p>
+    </div>
+    <div class="cta-btns">
+      <a class="b1" href="index.html#registro">Crear cuenta</a>
+      <a class="b2" href="index.html">Iniciar sesión</a>
+    </div>
+  </div>
+</main>
+
+<script src="js/nosotros.js"></script>
+<script>
+  EOD.renderNosotros(document.getElementById('contenido'));
+  // Si ya hay sesión, el icono de usuario lleva al panel
+  const tk = localStorage.getItem('eod_token') || sessionStorage.getItem('eod_token');
+  document.getElementById('navUser').onclick = () => { location.href = tk ? 'app.html' : 'index.html'; };
+</script>
+</body>
+</html>

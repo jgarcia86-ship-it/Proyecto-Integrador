@@ -1,0 +1,108 @@
+/* Módulo Residuos y recolecciones (se apoya en los estilos .cp-* de campanas.css) */
+.cp svg.rs-chart{fill:none;stroke:none}
+
+/* Banner con caneca y frase */
+.rs-art{display:flex;align-items:center;gap:6px;flex:none}
+.rs-art svg{width:150px;height:auto}
+.rs-frase{font-family:'Segoe Script','Brush Script MT','Comic Sans MS',cursive;font-style:italic;font-weight:700;font-size:22px;line-height:1.15;color:var(--verde-900);transform:rotate(-6deg);text-align:center;max-width:150px}
+
+.rs-acciones{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+
+/* Tarjetas de resumen con tendencia */
+.rs-trend{display:inline-flex;align-items:center;gap:5px;font-size:12.5px !important;font-weight:600;color:#2e7d3a !important}
+.rs-trend svg{width:15px;height:15px;stroke-width:2.4}
+.rs-trend.bajo{color:#b3261e !important}
+.rs-trend.neutro{color:var(--gris) !important;font-weight:400}
+.rs-stat b{font-size:30px}
+
+/* Rejillas */
+.rs-fila2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) minmax(0,.9fr);gap:16px;align-items:stretch}
+.rs-fila3{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(0,1fr);gap:16px;align-items:start}
+.rs-col{display:flex;flex-direction:column;gap:16px}
+.rs-card{background:#fff;border:1px solid var(--borde);border-radius:16px;padding:18px 20px;box-shadow:0 2px 8px rgba(27,74,42,.05);min-width:0}
+.rs-card h2{font-size:17px;font-weight:800;color:var(--verde-900)}
+.rs-cab{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.rs-link{display:inline-flex;align-items:center;gap:6px;color:var(--verde-700);font-weight:600;font-size:13.5px;text-decoration:none}
+.rs-link:hover{text-decoration:underline}
+.rs-link svg{width:16px;height:16px}
+.rs-select{font:500 13px 'Inter',sans-serif;color:var(--texto);border:1px solid var(--borde);border-radius:8px;padding:7px 10px;background:#fff;cursor:pointer}
+
+/* Dona + leyenda */
+.rs-dona{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:center}
+.rs-dona svg{width:170px;height:170px;flex:none}
+.rs-leyenda{flex:1;min-width:190px;display:flex;flex-direction:column;gap:9px;font-size:13px}
+.rs-ley{display:grid;grid-template-columns:12px minmax(0,1fr) 38px 58px;gap:8px;align-items:center}
+.rs-ley i{width:11px;height:11px;border-radius:50%}
+.rs-ley span:nth-child(2){overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rs-ley b{font-weight:700;text-align:right}
+.rs-ley em{font-style:normal;text-align:right;color:#41607a}
+
+/* Barras por mes */
+.rs-barras svg{width:100%;height:auto;display:block}
+
+/* ¿Qué pasa con los residuos? */
+.rs-info{background:linear-gradient(160deg,#e3f1d8,#f1f8ea);position:relative;overflow:hidden}
+.rs-info-cab{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}
+.rs-info-cab .cp-stat-ic{background:#fff}
+.rs-info p{font-size:13px;line-height:1.5;margin:4px 0 0;color:#2d3f33}
+.rs-pasos{display:flex;flex-direction:column;gap:12px;margin-top:6px}
+.rs-paso{display:flex;align-items:center;gap:10px}
+.rs-num{width:24px;height:24px;border-radius:50%;background:var(--verde-900);color:#fff;font-size:12.5px;font-weight:700;display:grid;place-items:center;flex:none}
+.rs-paso .cp-stat-ic{width:42px;height:42px;background:#fff}
+.rs-paso b{display:block;font-size:14px;color:var(--verde-900)}
+.rs-paso small{font-size:12px;color:#41607a}
+
+/* Iconos de tipo de residuo */
+.rs-ico{width:34px;height:34px;border-radius:50%;background:var(--verde-100);color:var(--verde-900);display:grid;place-items:center;flex:none}
+.rs-ico svg{width:18px;height:18px}
+
+/* Tabla de recolecciones */
+.rs-tabla{width:100%;border-collapse:collapse;font-size:13px}
+.rs-tabla thead th{background:#eef5e8;text-align:left;font-size:12px;font-weight:700;color:var(--verde-900);padding:10px 10px}
+.rs-tabla thead th:first-child{border-radius:10px 0 0 10px}
+.rs-tabla thead th:last-child{border-radius:0 10px 10px 0}
+.rs-tabla td{padding:10px;border-bottom:1px solid #edf3e8;vertical-align:middle}
+.rs-tabla tbody tr:last-child td{border-bottom:0}
+.rs-tabla small{display:block;color:var(--gris);font-size:11.5px}
+.rs-tabla .n{text-align:right}
+.rs-celda{display:flex;align-items:center;gap:10px}
+.rs-celda .rs-ico{width:32px;height:32px}
+.rs-tabla .cp-pill{padding:4px 12px}
+
+/* Tipos más recolectados */
+.rs-top{display:grid;grid-template-columns:34px minmax(0,1.1fr) minmax(0,1.2fr) 38px;gap:10px;align-items:center;padding:7px 0;font-size:13px}
+.rs-top .cp-bar-bg{height:8px}
+.rs-top b{text-align:right;font-weight:600}
+
+/* Tarjeta final */
+.rs-juntos{display:flex;align-items:center;gap:12px;background:linear-gradient(110deg,#d8e9cb,#ecf5e4);overflow:hidden}
+.rs-juntos div:first-child{flex:1}
+.rs-juntos b{display:block;font-size:15px;color:var(--verde-900);margin-bottom:4px}
+.rs-juntos p{margin:0;font-size:12.5px;line-height:1.5}
+.rs-juntos svg{width:110px;height:auto;stroke:none;fill:none;flex:none}
+
+/* Historial */
+.rs-filtros{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.rs-filtros .cp-buscar{flex:1;min-width:200px}
+.rs-pager{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;font-size:13px;color:var(--gris);flex-wrap:wrap}
+
+/* Formulario de registro */
+.rs-prev{background:var(--verde-100);border-radius:10px;padding:10px 12px;font-size:13px;color:var(--verde-900);min-height:20px}
+.rs-ok{background:#e3f0d9;border-radius:10px;padding:10px 12px;font-size:13px;color:var(--verde-900);font-weight:600}
+.cp-form select{font:400 14px 'Inter',sans-serif;color:var(--texto);border:1px solid var(--borde);border-radius:10px;padding:10px 12px;background:#f6faf2;outline:none;width:100%}
+.cp-form select:focus{border-color:var(--verde-700);background:#fff}
+
+@media (max-width:1250px){
+  .rs-fila2{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .rs-fila2 .rs-info{grid-column:1 / -1}
+}
+@media (max-width:980px){
+  .rs-fila3{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .rs-fila2{grid-template-columns:1fr}
+  .rs-art{display:none}
+  .rs-scroll{overflow-x:auto}
+  .rs-tabla{min-width:640px}
+}
+.rs-scroll{overflow-x:auto}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciativas · EOD</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/nosotros.css">
+  <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="EOD inicio">
+    <img class="brand-mark" src="img/logo.svg" alt="EOD">
+    <span class="brand-text">Entidad<br>Organizadora<br>de Desechos</span>
+  </a>
+  <nav class="nav-links" aria-label="Principal">
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="gestion.html">Gestión de Desechos</a>
+    <a href="iniciativas.html" class="active">Iniciativas</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <button class="nav-user" id="navUser" type="button" aria-label="Cuenta">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+  </button>
+</header>
+
+<main class="pg">
+  <section class="pg-banner">
+    <div class="pg-banner-txt">
+      <svg class="sn-hoja" viewBox="0 0 48 48"><path d="M8 40C6 20 18 6 42 6c0 24-12 36-30 34z" fill="#3f9a45"/><path d="M10 38C18 26 26 18 36 12" fill="none" stroke="#e8f5dd" stroke-width="2" stroke-linecap="round"/></svg>
+      <div>
+        <h1>Iniciativas</h1>
+        <h3>Campañas que mueven el cambio</h3>
+        <p>Las instituciones de EOD se unen para reciclar más y mejor. Mira las campañas activas, su meta y cuánto llevan recolectado.</p>
+      </div>
+    </div>
+    <div class="pg-art" aria-hidden="true"><svg viewBox="0 0 260 150"><ellipse cx="130" cy="138" rx="120" ry="8" fill="#b9d3a6" opacity=".6"/>
+    <rect x="30" y="70" width="34" height="68" rx="6" fill="#8fd16a"/><rect x="78" y="44" width="34" height="94" rx="6" fill="#5fae48"/>
+    <rect x="126" y="20" width="34" height="118" rx="6" fill="#2e7d3a"/><rect x="174" y="58" width="34" height="80" rx="6" fill="#3f9a45"/>
+    <path d="M30 56l48-26 48-14 82 26" fill="none" stroke="#1b4a2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 7"/>
+    <circle cx="208" cy="42" r="9" fill="#f0a30a"/></svg></div>
+  </section>
+
+
+  <section class="ini-stats" aria-label="Resumen">
+    <div class="ini-stat"><b id="sCurso">–</b><span>campañas en curso</span></div>
+    <div class="ini-stat"><b id="sKg">–</b><span>kg recolectados</span></div>
+    <div class="ini-stat"><b id="sPart">–</b><span>participantes inscritos</span></div>
+    <div class="ini-stat"><b id="sInst">–</b><span>instituciones activas</span></div>
+  </section>
+
+  <section class="pg-cab">
+    <div><h2 class="pg-titulo">Campañas</h2><p class="pg-sub">Filtra por estado para encontrar la que más te interese.</p></div>
+    <div class="ini-chips" role="group" aria-label="Filtrar por estado">
+      <button type="button" class="ini-chip on" data-f="todas">Todas</button>
+      <button type="button" class="ini-chip" data-f="en_curso">En curso</button>
+      <button type="button" class="ini-chip" data-f="programada">Próximas</button>
+      <button type="button" class="ini-chip" data-f="finalizada">Finalizadas</button>
+    </div>
+  </section>
+  <section class="ini-grid" id="grid" aria-live="polite">
+    <div class="ini-skel"></div><div class="ini-skel"></div><div class="ini-skel"></div>
+  </section>
+
+  <div class="cta">
+    <div>
+      <h3>¿Quieres participar en una campaña?</h3>
+      <p>Crea tu cuenta con tu institución y únete a las campañas de tu grupo.</p>
+    </div>
+    <div class="cta-btns">
+      <a class="b1" href="index.html#registro">Crear cuenta</a>
+      <a class="b2" href="index.html">Iniciar sesión</a>
+    </div>
+  </div>
+</main>
+
+<script>
+
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const num = n => Number(n).toLocaleString('es-CO', { maximumFractionDigits: 1 });
+  const MESES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  const fecha = s => { const [y, m, d] = s.split('-'); return `${+d} ${MESES[+m - 1]} ${y}`; };
+  const ETIQUETA = { en_curso: 'En curso', programada: 'Próxima', finalizada: 'Finalizada' };
+  const CAL = '<svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>';
+  let TODAS = [], filtro = 'todas';
+
+  function tarjeta(c) {
+    const pie = c.estado === 'programada' ? 'Aún no ha comenzado'
+      : `${num(c.participantes)} participante${c.participantes === 1 ? '' : 's'}`;
+    return `<article class="ini-card">
+      <div class="ini-head"><span class="ini-inst" title="${esc(c.institucion)}">${esc(c.institucion)}</span>
+        <span class="ini-badge ${c.estado}">${ETIQUETA[c.estado]}</span></div>
+      <h3>${esc(c.nombre)}</h3>
+      <p>${esc(c.descripcion) || 'Campaña de reciclaje de EOD.'}</p>
+      <div class="ini-fechas">${CAL}<span>${fecha(c.inicio)} – ${fecha(c.fin)}</span></div>
+      <div class="ini-prog">
+        <div class="ini-prog-top"><span><b>${num(c.kg)} kg</b> de ${num(c.metaKg)} kg</span><b>${num(c.porcentaje)}%</b></div>
+        <div class="ini-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${c.porcentaje}"><i style="width:${c.porcentaje}%"></i></div>
+      </div>
+      <div class="ini-foot">${pie}</div>
+    </article>`;
+  }
+
+  function pintar() {
+    const lista = TODAS.filter(c => filtro === 'todas' || c.estado === filtro);
+    $('grid').innerHTML = lista.length ? lista.map(tarjeta).join('')
+      : '<div class="ini-vacio">No hay campañas en esta categoría por ahora.</div>';
+  }
+
+  document.querySelectorAll('.ini-chip').forEach(b => b.onclick = () => {
+    filtro = b.dataset.f;
+    document.querySelectorAll('.ini-chip').forEach(x => x.classList.toggle('on', x === b));
+    pintar();
+  });
+
+  fetch('/api/publico/campanas').then(r => r.json()).then(d => {
+    if (!d.ok) throw new Error(d.error);
+    TODAS = d.campanas;
+    $('sCurso').textContent = num(d.totales.enCurso);
+    $('sKg').textContent = num(d.totales.kg);
+    $('sPart').textContent = num(d.totales.participantes);
+    $('sInst').textContent = num(d.totales.instituciones);
+    pintar();
+  }).catch(() => {
+    $('grid').innerHTML = '<div class="ini-vacio">No pudimos cargar las campañas. Intenta de nuevo en un momento.</div>';
+  });
+
+  // Si ya hay sesión, el icono de usuario lleva al panel
+  const tk = localStorage.getItem('eod_token') || sessionStorage.getItem('eod_token');
+  document.getElementById('navUser').onclick = () => { location.href = tk ? 'app.html' : 'index.html'; };
+</script>
+</body>
+</html>

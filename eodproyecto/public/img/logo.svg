@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 60">
+  <text x="0" y="52" font-family="Inter,Arial,Helvetica,sans-serif" font-weight="800" font-size="62" fill="#1d4d2b" letter-spacing="-3">E</text>
+  <circle cx="68" cy="33" r="21" fill="none" stroke="#3f8f46" stroke-width="7" stroke-dasharray="105 27" stroke-linecap="round"/>
+  <path d="M60 32c0-9 8-15 17-15-1 9-7 16-17 15z" fill="#6cb84a"/>
+  <circle cx="116" cy="33" r="21" fill="#2e7d3a"/>
+  <path d="M104 30c4-6 10-7 14-4 2 3-2 5-1 8s6 3 4 8c-6 3-14 0-17-12z" fill="#8fd16a"/>
+  <path d="M118 44c0-4 3-4 5-6 3 1 4 4 2 6-2 2-5 2-7 0z" fill="#8fd16a"/>
+</svg>

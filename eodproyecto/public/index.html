@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EOD · Entidad Organizadora de Desechos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Logo reutilizable -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo-mark" viewBox="0 0 150 60">
+    <text x="0" y="52" font-family="Inter,Arial,sans-serif" font-weight="800" font-size="62" fill="#1d4d2b" letter-spacing="-3">E</text>
+    <circle cx="68" cy="33" r="21" fill="none" stroke="#3f8f46" stroke-width="7" stroke-dasharray="105 27" stroke-linecap="round"/>
+    <path d="M60 32c0-9 8-15 17-15-1 9-7 16-17 15z" fill="#6cb84a"/>
+    <path d="M64 36l6 6 8-10" fill="none" stroke="#fff" stroke-width="0"/>
+    <circle cx="116" cy="33" r="21" fill="#2e7d3a"/>
+    <path d="M104 30c4-6 10-7 14-4 2 3-2 5-1 8s6 3 4 8c-6 3-14 0-17-12z" fill="#8fd16a"/>
+    <path d="M118 44c0-4 3-4 5-6 3 1 4 4 2 6-2 2-5 2-7 0z" fill="#8fd16a"/>
+  </symbol>
+</svg>
+
+<header class="nav">
+  <a class="brand" href="#" aria-label="EOD inicio">
+    <svg class="brand-mark"><use href="#logo-mark"/></svg>
+    <span class="brand-text">Entidad<br>Organizadora<br>de Desechos</span>
+  </a>
+  <nav class="nav-links" aria-label="Principal">
+    <a href="index.html" class="active">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="gestion.html">Gestión de Desechos</a>
+    <a href="iniciativas.html">Iniciativas</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <button class="nav-user" id="navUser" type="button" aria-label="Cuenta">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+  </button>
+</header>
+
+<main class="hero">
+  <section class="hero-left">
+    <h1>Gestionamos los desechos de hoy <strong>para construir un futuro más sostenible.</strong></h1>
+    <svg class="illustration" viewBox="0 0 760 470" role="img" aria-label="Ilustración de una ciudad sostenible: personas reciclando en canecas de colores, un camión de reciclaje, molinos de viento y paneles solares"><defs><symbol id="rec" viewBox="-11 -11 22 22"><g transform="rotate(0)"><path d="M1.2 -6.9A7 7 0 0 1 6.9 1.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M6.3 4.8L9.6 1.7L4.2 0.7Z" fill="currentColor"/></g><g transform="rotate(120)"><path d="M1.2 -6.9A7 7 0 0 1 6.9 1.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M6.3 4.8L9.6 1.7L4.2 0.7Z" fill="currentColor"/></g><g transform="rotate(240)"><path d="M1.2 -6.9A7 7 0 0 1 6.9 1.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M6.3 4.8L9.6 1.7L4.2 0.7Z" fill="currentColor"/></g></symbol><symbol id="hoja" viewBox="-12 -60 24 60"><path d="M0 0C-14-18-10-44 0-58C10-44 14-18 0 0Z"/></symbol><pattern id="ven" width="12" height="15" patternUnits="userSpaceOnUse"><rect x="3" y="4" width="6" height="7" rx="1.2" fill="#7fb996" opacity=".75"/></pattern><linearGradient id="camG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#37a24f"/><stop offset="1" stop-color="#26763a"/></linearGradient></defs><circle cx="640" cy="92" r="64" fill="#fff" opacity=".35"/><circle cx="640" cy="92" r="40" fill="#fff" opacity=".45"/><g class="nube n1"><g transform="translate(90 48) scale(1)" fill="#fff" opacity=".92"><rect x="0" y="16" width="84" height="22" rx="11"/><circle cx="26" cy="17" r="15"/><circle cx="50" cy="11" r="19"/><circle cx="68" cy="22" r="12"/></g></g><g class="nube n2"><g transform="translate(300 24) scale(0.7)" fill="#fff" opacity=".92"><rect x="0" y="16" width="84" height="22" rx="11"/><circle cx="26" cy="17" r="15"/><circle cx="50" cy="11" r="19"/><circle cx="68" cy="22" r="12"/></g></g><g class="nube n3"><g transform="translate(560 60) scale(0.85)" fill="#fff" opacity=".92"><rect x="0" y="16" width="84" height="22" rx="11"/><circle cx="26" cy="17" r="15"/><circle cx="50" cy="11" r="19"/><circle cx="68" cy="22" r="12"/></g></g><g class="pajaro b1"><path transform="translate(220 110) scale(1)" d="M0 0q6-7 12 0q6-7 12 0" fill="none" stroke="#1b4a2a" stroke-width="1.8" stroke-linecap="round" opacity=".6"/></g><g class="pajaro b2"><path transform="translate(250 92) scale(0.8)" d="M0 0q6-7 12 0q6-7 12 0" fill="none" stroke="#1b4a2a" stroke-width="1.8" stroke-linecap="round" opacity=".6"/></g><g class="pajaro b3"><path transform="translate(470 70) scale(0.9)" d="M0 0q6-7 12 0q6-7 12 0" fill="none" stroke="#1b4a2a" stroke-width="1.8" stroke-linecap="round" opacity=".6"/></g><g class="pajaro b2"><path transform="translate(690 150) scale(0.7)" d="M0 0q6-7 12 0q6-7 12 0" fill="none" stroke="#1b4a2a" stroke-width="1.8" stroke-linecap="round" opacity=".6"/></g><g><rect x="395" y="196" width="40" height="110" rx="3" fill="#cfe8d8"/><rect x="395" y="202" width="40" height="104" fill="url(#ven)"/><rect x="440" y="118" width="60" height="190" rx="3" fill="#b6dac3"/><rect x="440" y="124" width="60" height="184" fill="url(#ven)"/><rect x="468" y="96" width="3" height="24" fill="#9cc9ad"/><rect x="505" y="165" width="46" height="140" rx="3" fill="#a5d2b8"/><rect x="505" y="171" width="46" height="134" fill="url(#ven)"/><rect x="556" y="205" width="38" height="100" rx="3" fill="#bfe0cd"/><rect x="556" y="211" width="38" height="94" fill="url(#ven)"/><rect x="598" y="228" width="46" height="80" rx="3" fill="#a5d2b8"/><rect x="598" y="234" width="46" height="74" fill="url(#ven)"/><rect x="358" y="232" width="34" height="76" rx="3" fill="#d6ecdc"/><rect x="358" y="238" width="34" height="70" fill="url(#ven)"/><circle cx="575" cy="200" r="7" fill="#5fae48"/><circle cx="586" cy="204" r="6" fill="#4f9d3f"/></g><path d="M0 285C110 240 215 258 330 270S560 240 760 262V470H0Z" fill="#cfe6bd"/><path d="M247.6 262L249 160L251 160L252.4 262Z" fill="#f8fbf5" stroke="#cdddc1" stroke-width=".8"/><g class="spin s1" style="transform-origin:250px 160px"><g transform="translate(250 160)"><path d="M0 0C-3.7 -15.5 -2.8 -49.6 0 -62C2.8 -49.6 3.7 -15.5 0 0Z" fill="#fff" stroke="#cdddc1" stroke-width=".8"/><g transform="rotate(120)"><path d="M0 0C-3.7 -15.5 -2.8 -49.6 0 -62C2.8 -49.6 3.7 -15.5 0 0Z" fill="#fff" stroke="#cdddc1" stroke-width=".8"/></g><g transform="rotate(240)"><path d="M0 0C-3.7 -15.5 -2.8 -49.6 0 -62C2.8 -49.6 3.7 -15.5 0 0Z" fill="#fff" stroke="#cdddc1" stroke-width=".8"/></g></g></g><circle cx="250" cy="160" r="4" fill="#fff" stroke="#cdddc1" stroke-width=".8"/><path d="M330.2 270L331 205L333 205L333.8 270Z" fill="#f8fbf5" stroke="#cdddc1" stroke-width=".8"/><g class="spin s2 inv" style="transform-origin:332px 205px"><g transform="translate(332 205)"><path d="M0 0C-2.5 -10.5 -1.9 -33.6 0 -42C1.9 -33.6 2.5 -10.5 0 0Z" fill="#fff" stroke="#cdddc1" stroke-width=".8"/><g transform="rotate(120)"><path d="M0 0C-2.5 -10.5 -1.9 -33.6 0 -42C1.9 -33.6 2.5 -10.5 0 0Z" fill="#fff" stroke="#cdddc1" stroke-width=".8"/></g><g transform="rotate(240)"><path d="M0 0C-2.5 -10.5 -1.9 -33.6 0 -42C1.9 -33.6 2.5 -10.5 0 0Z" fill="#fff" stroke="#cdddc1" stroke-width=".8"/></g></g></g><circle cx="332" cy="205" r="2.7" fill="#fff" stroke="#cdddc1" stroke-width=".8"/><path d="M697.8 268L699 190L701 190L702.2 268Z" fill="#f8fbf5" stroke="#cdddc1" stroke-width=".8"/><g class="spin s3" style="transform-origin:700px 190px"><g transform="translate(700 190)"><path d="M0 0C-3.1 -13 -2.3 -41.6 0 -52C2.3 -41.6 3.1 -13 0 0Z" fill="#fff" stroke="#cdddc1" stroke-width=".8"/><g transform="rotate(120)"><path d="M0 0C-3.1 -13 -2.3 -41.6 0 -52C2.3 -41.6 3.1 -13 0 0Z" fill="#fff" stroke="#cdddc1" stroke-width=".8"/></g><g transform="rotate(240)"><path d="M0 0C-3.1 -13 -2.3 -41.6 0 -52C2.3 -41.6 3.1 -13 0 0Z" fill="#fff" stroke="#cdddc1" stroke-width=".8"/></g></g></g><circle cx="700" cy="190" r="3.4" fill="#fff" stroke="#cdddc1" stroke-width=".8"/><path d="M0 340C100 292 230 312 330 336S560 310 760 322V470H0Z" fill="#a9d28a"/><g><polygon points="160,322 230,322 220,348 150,348" fill="#2c5fa8" stroke="#8fb4e6" stroke-width="1"/><path d="M180.0 322L173.3 348M200.0 322L196.7 348M155.0 335.0H225.0" stroke="#8fb4e6" stroke-width=".9"/><path d="M185.0 348v10" stroke="#5d6b62" stroke-width="2"/><polygon points="245,330 315,330 305,356 235,356" fill="#2c5fa8" stroke="#8fb4e6" stroke-width="1"/><path d="M265.0 330L258.3 356M285.0 330L281.7 356M240.0 343.0H310.0" stroke="#8fb4e6" stroke-width=".9"/><path d="M270.0 356v10" stroke="#5d6b62" stroke-width="2"/></g><g transform="translate(334 342) scale(0.42)"><rect x="-4" y="-22" width="8" height="22" rx="3" fill="#7a5a3a"/><path d="M0-118L26-70H-26Z" fill="#3a8a3a"/><path d="M0-94L32-42H-32Z" fill="#4a9b42"/><path d="M0-66L38-14H-38Z" fill="#5cae48"/></g><g transform="translate(362 346) scale(0.34)"><rect x="-6" y="-70" width="12" height="70" rx="5" fill="#7a5a3a"/><circle cx="0" cy="-92" r="38" fill="#4f9d3f"/><circle cx="26" cy="-72" r="26" fill="#63b04a"/><circle cx="-28" cy="-70" r="24" fill="#3f8a35"/><circle cx="-8" cy="-104" r="16" fill="#6cbb52" opacity=".7"/></g><g transform="translate(630 330) scale(0.4)"><rect x="-4" y="-22" width="8" height="22" rx="3" fill="#7a5a3a"/><path d="M0-118L26-70H-26Z" fill="#3a8a3a"/><path d="M0-94L32-42H-32Z" fill="#4a9b42"/><path d="M0-66L38-14H-38Z" fill="#5cae48"/></g><g transform="translate(660 334) scale(0.34)"><rect x="-6" y="-70" width="12" height="70" rx="5" fill="#7a5a3a"/><circle cx="0" cy="-92" r="38" fill="#4f9d3f"/><circle cx="26" cy="-72" r="26" fill="#63b04a"/><circle cx="-28" cy="-70" r="24" fill="#3f8a35"/><circle cx="-8" cy="-104" r="16" fill="#6cbb52" opacity=".7"/></g><path d="M0 408C120 372 260 392 400 404S640 382 760 394V470H0Z" fill="#8cc46c"/><path d="M150 470C215 438 290 418 420 412C540 406 660 400 760 400V470Z" fill="#ecdcaa"/><path d="M150 470C215 438 290 418 420 412" fill="none" stroke="#dcc98f" stroke-width="1.5" opacity=".7"/><g transform="translate(52 430) scale(1.55)"><rect x="-6" y="-70" width="12" height="70" rx="5" fill="#7a5a3a"/><circle cx="0" cy="-92" r="38" fill="#4f9d3f"/><circle cx="26" cy="-72" r="26" fill="#63b04a"/><circle cx="-28" cy="-70" r="24" fill="#3f8a35"/><circle cx="-8" cy="-104" r="16" fill="#6cbb52" opacity=".7"/></g><g transform="translate(142 414) scale(1.0)"><rect x="-4" y="-22" width="8" height="22" rx="3" fill="#7a5a3a"/><path d="M0-118L26-70H-26Z" fill="#3a8a3a"/><path d="M0-94L32-42H-32Z" fill="#4a9b42"/><path d="M0-66L38-14H-38Z" fill="#5cae48"/></g><g transform="translate(718 400) scale(1.25)"><rect x="-5" y="-80" width="10" height="80" rx="4" fill="#7a5a3a"/><ellipse cx="0" cy="-108" rx="26" ry="44" fill="#5fae48"/><ellipse cx="10" cy="-96" rx="14" ry="28" fill="#74c05a" opacity=".6"/></g><g transform="translate(676 404) scale(0.75)"><rect x="-5" y="-60" width="10" height="60" rx="4" fill="#7a5a3a"/><circle cx="0" cy="-80" r="32" fill="#58a944"/><circle cx="-14" cy="-86" r="4" fill="#e8543a"/><circle cx="10" cy="-72" r="4" fill="#e8543a"/><circle cx="14" cy="-92" r="4" fill="#e8543a"/><circle cx="-6" cy="-68" r="4" fill="#e8543a"/></g><g transform="translate(200 376) scale(0.55)"><circle cx="-14" cy="-10" r="14" fill="#4f9d3f"/><circle cx="6" cy="-14" r="17" fill="#63b04a"/><circle cx="22" cy="-8" r="12" fill="#3f8a35"/></g><g transform="translate(560 392) scale(0.7)"><circle cx="-14" cy="-10" r="14" fill="#4f9d3f"/><circle cx="6" cy="-14" r="17" fill="#63b04a"/><circle cx="22" cy="-8" r="12" fill="#3f8a35"/></g><g font-family="Inter,Arial,sans-serif" font-size="6.6" font-weight="700" fill="#fff" text-anchor="middle"><g transform="translate(176 396)"><rect x="-2" y="0" width="40" height="9" rx="4" fill="#2f7fd0"/><rect x="12" y="-4" width="12" height="6" rx="2.5" fill="#2f7fd0" opacity=".8"/><path d="M2 11h32l-2.5 42a3 3 0 0 1-3 2.8H7.5a3 3 0 0 1-3-2.8Z" fill="#2f7fd0"/><path d="M2 11h32l-.5 8H2.5Z" fill="#000" opacity=".08"/><path d="M11 20h10l5 5v14H11Z" fill="#fff"/><path d="M14 29h9M14 33h9" stroke="#2f7fd0" stroke-width="1.4" stroke-linecap="round"/><text x="18" y="50">Papel</text></g><g transform="translate(220 396)"><rect x="-2" y="0" width="40" height="9" rx="4" fill="#3da648"/><rect x="12" y="-4" width="12" height="6" rx="2.5" fill="#3da648" opacity=".8"/><path d="M2 11h32l-2.5 42a3 3 0 0 1-3 2.8H7.5a3 3 0 0 1-3-2.8Z" fill="#3da648"/><path d="M2 11h32l-.5 8H2.5Z" fill="#000" opacity=".08"/><path d="M16 20h4v5l3 4v10H13V29l3-4Z" fill="#fff"/><rect x="15" y="18" width="6" height="3" rx="1" fill="#fff"/><text x="18" y="50">Vidrio</text></g><g transform="translate(264 396)"><rect x="-2" y="0" width="40" height="9" rx="4" fill="#f2b632"/><rect x="12" y="-4" width="12" height="6" rx="2.5" fill="#f2b632" opacity=".8"/><path d="M2 11h32l-2.5 42a3 3 0 0 1-3 2.8H7.5a3 3 0 0 1-3-2.8Z" fill="#f2b632"/><path d="M2 11h32l-.5 8H2.5Z" fill="#000" opacity=".08"/><use href="#rec" x="8" y="19" width="20" height="20" color="#fff"/><text x="18" y="50">Plástico</text></g><g transform="translate(308 396)"><rect x="-2" y="0" width="40" height="9" rx="4" fill="#7a5a3a"/><rect x="12" y="-4" width="12" height="6" rx="2.5" fill="#7a5a3a" opacity=".8"/><path d="M2 11h32l-2.5 42a3 3 0 0 1-3 2.8H7.5a3 3 0 0 1-3-2.8Z" fill="#7a5a3a"/><path d="M2 11h32l-.5 8H2.5Z" fill="#000" opacity=".08"/><path d="M10 37C9 27 15 21 27 20 27 31 22 37 10 37Z" fill="#fff"/><path d="M12 35C16 30 20 26 25 23" stroke="#7a5a3a" stroke-width="1.4" fill="none" stroke-linecap="round"/><text x="18" y="50">Orgánico</text></g></g><ellipse cx="560" cy="446" rx="118" ry="7" fill="#000" opacity=".12"/><g class="camion"><rect x="448" y="352" width="150" height="82" rx="9" fill="url(#camG)"/><rect x="448" y="418" width="214" height="16" rx="4" fill="#215f31"/><path d="M598 372h38a14 14 0 0 1 12 7l14 22a8 8 0 0 1 1 4v29H598Z" fill="#f6f8f5"/><path d="M608 380h26a6 6 0 0 1 5 3l10 16H608Z" fill="#a8d6ea"/><rect x="446" y="344" width="46" height="12" rx="5" fill="#215f31"/><use href="#rec" x="496" y="366" width="52" height="52" color="#fff"/><rect x="655" y="404" width="10" height="5" rx="2" fill="#f2b632"/></g><g><circle cx="488" cy="438" r="17" fill="#262626"/><circle cx="488" cy="438" r="7" fill="#b9b9b9"/><circle cx="632" cy="438" r="17" fill="#262626"/><circle cx="632" cy="438" r="7" fill="#b9b9b9"/></g><g transform="translate(112 462) scale(1.12)"><ellipse cx="0" cy="0" rx="14" ry="3" fill="#000" opacity=".1"/><rect x="-8" y="-26" width="7" height="25" rx="3" fill="#2c4f7a"/><rect x="1" y="-26" width="7" height="25" rx="3" fill="#2c4f7a"/><ellipse cx="-4.5" cy="-1" rx="5" ry="2.4" fill="#2b2b2b"/><ellipse cx="4.5" cy="-1" rx="5" ry="2.4" fill="#2b2b2b"/><rect x="-10" y="-56" width="20" height="34" rx="8" fill="#f3f3f3"/><circle cx="0" cy="-66" r="8.5" fill="#f2c9a0"/><path d="M-9 -67C-9 -77 9 -77 9 -67C5 -71 -4 -71 -9 -67Z" fill="#5a3a22"/><path d="M-8 -50L-12 -34" stroke="#f3f3f3" stroke-width="6" stroke-linecap="round"/><circle cx="-12" cy="-34" r="3.2" fill="#f2c9a0"/><path d="M8 -50L12 -34" stroke="#f3f3f3" stroke-width="6" stroke-linecap="round"/><circle cx="12" cy="-34" r="3.2" fill="#f2c9a0"/><rect x="-16" y="-48" width="32" height="22" rx="2" fill="#c99a5b"/><path d="M-16 -40h32" stroke="#a87a3a" stroke-width="2"/><use href="#rec" x="-8" y="-45" width="14" height="14" color="#fff"/></g><g transform="translate(158 466) scale(0.78)"><ellipse cx="0" cy="0" rx="14" ry="3" fill="#000" opacity=".1"/><rect x="-8" y="-26" width="7" height="25" rx="3" fill="#33445a"/><rect x="1" y="-26" width="7" height="25" rx="3" fill="#33445a"/><ellipse cx="-4.5" cy="-1" rx="5" ry="2.4" fill="#2b2b2b"/><ellipse cx="4.5" cy="-1" rx="5" ry="2.4" fill="#2b2b2b"/><rect x="-10" y="-56" width="20" height="34" rx="8" fill="#f2b632"/><circle cx="0" cy="-66" r="8.5" fill="#e8b88e"/><path d="M-9 -67C-9 -77 9 -77 9 -67C5 -71 -4 -71 -9 -67Z" fill="#2b1d14"/><path d="M-8 -50L-10 -34" stroke="#f2b632" stroke-width="6" stroke-linecap="round"/><circle cx="-10" cy="-34" r="3.2" fill="#e8b88e"/><path d="M8 -50L10 -48" stroke="#f2b632" stroke-width="6" stroke-linecap="round"/><circle cx="10" cy="-48" r="3.2" fill="#e8b88e"/><rect x="9" y="-60" width="6" height="12" rx="2.5" fill="#9ccfe6" opacity=".9"/></g><g transform="translate(372 466) scale(1.1)"><ellipse cx="0" cy="0" rx="14" ry="3" fill="#000" opacity=".1"/><rect x="-8" y="-26" width="7" height="25" rx="3" fill="#33445a"/><rect x="1" y="-26" width="7" height="25" rx="3" fill="#33445a"/><ellipse cx="-4.5" cy="-1" rx="5" ry="2.4" fill="#2b2b2b"/><ellipse cx="4.5" cy="-1" rx="5" ry="2.4" fill="#2b2b2b"/><rect x="-10" y="-56" width="20" height="34" rx="8" fill="#3da648"/><path d="M-9 -66C-12 -50 -11 -44 -8 -40L-5 -52Z" fill="#2b1d14"/><circle cx="0" cy="-66" r="8.5" fill="#e0b48a"/><path d="M-9 -67C-9 -77 9 -77 9 -67C5 -71 -4 -71 -9 -67Z" fill="#2b1d14"/><path d="M-8 -50L-6 -40" stroke="#3da648" stroke-width="6" stroke-linecap="round"/><circle cx="-6" cy="-40" r="3.2" fill="#e0b48a"/><path d="M8 -50L18 -66" stroke="#3da648" stroke-width="6" stroke-linecap="round"/><circle cx="18" cy="-66" r="3.2" fill="#e0b48a"/><path d="M12 -80c10-4 20 0 20 9c0 8-8 12-16 8Z" fill="#9fd5a0" stroke="#fff" stroke-width="1" opacity=".95"/><use href="#rec" x="15" y="-79" width="12" height="12" color="#fff"/></g><g transform="translate(420 468) scale(1.12)"><ellipse cx="0" cy="0" rx="14" ry="3" fill="#000" opacity=".1"/><rect x="-8" y="-26" width="7" height="25" rx="3" fill="#2c3a4a"/><rect x="1" y="-26" width="7" height="25" rx="3" fill="#2c3a4a"/><ellipse cx="-4.5" cy="-1" rx="5" ry="2.4" fill="#2b2b2b"/><ellipse cx="4.5" cy="-1" rx="5" ry="2.4" fill="#2b2b2b"/><rect x="-10" y="-56" width="20" height="34" rx="8" fill="#2f8f43"/><circle cx="0" cy="-66" r="8.5" fill="#8a5a3a"/><path d="M-9 -67C-9 -77 9 -77 9 -67C5 -71 -4 -71 -9 -67Z" fill="#1a1210"/><path d="M-8 -50L-4 -30" stroke="#2f8f43" stroke-width="6" stroke-linecap="round"/><circle cx="-4" cy="-30" r="3.2" fill="#8a5a3a"/><path d="M8 -50L14 -34" stroke="#2f8f43" stroke-width="6" stroke-linecap="round"/><circle cx="14" cy="-34" r="3.2" fill="#8a5a3a"/></g><g transform="translate(468 462) scale(1.04)"><ellipse cx="0" cy="0" rx="14" ry="3" fill="#000" opacity=".1"/><rect x="-8" y="-26" width="7" height="25" rx="3" fill="#33445a"/><rect x="1" y="-26" width="7" height="25" rx="3" fill="#33445a"/><ellipse cx="-4.5" cy="-1" rx="5" ry="2.4" fill="#2b2b2b"/><ellipse cx="4.5" cy="-1" rx="5" ry="2.4" fill="#2b2b2b"/><rect x="-10" y="-56" width="20" height="34" rx="8" fill="#fff"/><path d="M-9 -66C-12 -50 -11 -44 -8 -40L-5 -52Z" fill="#8a5a22"/><circle cx="0" cy="-66" r="8.5" fill="#f2c9a0"/><path d="M-9 -67C-9 -77 9 -77 9 -67C5 -71 -4 -71 -9 -67Z" fill="#8a5a22"/><path d="M-8 -50L-14 -36" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="-14" cy="-36" r="3.2" fill="#f2c9a0"/><path d="M8 -50L4 -34" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="4" cy="-34" r="3.2" fill="#f2c9a0"/></g><g transform="translate(442 430)"><path d="M-9 -14h18l3 16a4 4 0 0 1-4 5h-16a4 4 0 0 1-4-5Z" fill="#9fd5a0" stroke="#fff" stroke-width="1"/><path d="M-5 -14c0-6 10-6 10 0" fill="none" stroke="#fff" stroke-width="1.6"/><use href="#rec" x="-6" y="-12" width="12" height="12" color="#fff"/></g><g><g transform="translate(20 478) scale(1.5)"><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#2e7d3a" transform="rotate(-48) scale(1.0)"/><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#3d8f35" transform="rotate(-20) scale(1.25)"/><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#54a540" transform="rotate(6) scale(1.35)"/><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#3d8f35" transform="rotate(30) scale(1.1)"/><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#2e7d3a" transform="rotate(54) scale(0.9)"/></g><g transform="translate(86 482) scale(1.0)"><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#54a540" transform="rotate(-36) scale(0.9)"/><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#3d8f35" transform="rotate(-6) scale(1.1)"/><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#6cbb52" transform="rotate(26) scale(0.95)"/></g><g transform="translate(738 480) scale(1.5)"><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#2e7d3a" transform="rotate(-54) scale(0.9)"/><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#3d8f35" transform="rotate(-24) scale(1.2)"/><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#54a540" transform="rotate(2) scale(1.35)"/><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#3d8f35" transform="rotate(28) scale(1.15)"/><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#2e7d3a" transform="rotate(52) scale(0.85)"/></g><g transform="translate(672 484) scale(0.95)"><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#54a540" transform="rotate(-34) scale(0.95)"/><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#3d8f35" transform="rotate(-4) scale(1.1)"/><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#6cbb52" transform="rotate(28) scale(0.9)"/></g><g transform="translate(560 486) scale(0.6)"><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#54a540" transform="rotate(-30) scale(0.9)"/><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#3d8f35" transform="rotate(0) scale(1.1)"/><use href="#hoja" x="-12" y="-60" width="24" height="60" fill="#6cbb52" transform="rotate(30) scale(0.9)"/></g><g><circle cx="22" cy="404" r="3.2" fill="#fff"/><circle cx="34" cy="414" r="3" fill="#f6dc7a"/><circle cx="96" cy="436" r="3" fill="#fff"/><circle cx="700" cy="436" r="3.2" fill="#f6dc7a"/><circle cx="728" cy="428" r="3" fill="#fff"/></g></g></svg>
+  </section>
+
+  <section class="card" aria-live="polite">
+    <div class="tabs" role="tablist">
+      <button class="tab active" id="tabLogin" role="tab" aria-selected="true" type="button">Iniciar sesión</button>
+      <button class="tab" id="tabRegistro" role="tab" aria-selected="false" type="button">Crear cuenta</button>
+    </div>
+
+    <div class="card-body">
+      <!-- ===== LOGIN ===== -->
+      <form id="formLogin" novalidate>
+        <p class="kicker">¡Bienvenido a EOD!</p>
+        <h2>Inicia sesión</h2>
+        <p class="sub">Conéctate con EOD y sé parte del cambio</p>
+
+        <label for="lCorreo">Correo electrónico</label>
+        <div class="field">
+          <svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+          <input id="lCorreo" type="email" placeholder="tunombre@correo.com" autocomplete="email" required>
+        </div>
+
+        <label for="lClave">Contraseña</label>
+        <div class="field">
+          <svg class="ico" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          <input id="lClave" type="password" placeholder="••••••••" autocomplete="current-password" required>
+          <button type="button" class="eye" data-eye="lClave" aria-label="Mostrar contraseña">
+            <svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+          </button>
+        </div>
+
+        <div class="row">
+          <label class="check"><input type="checkbox" id="lRecordar"> Recordarme</label>
+          <a href="#" id="olvide">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <p class="msg" id="msgLogin" role="alert"></p>
+        <button class="btn-primary" type="submit" id="btnLogin">Iniciar sesión</button>
+
+        <p class="foot">¿Aún no tienes cuenta? <a href="#" data-goto="registro">Crear una cuenta</a></p>
+      </form>
+
+      <!-- ===== REGISTRO ===== -->
+      <form id="formRegistro" class="hidden" novalidate>
+        <p class="kicker">¡Únete a EOD!</p>
+        <h2>Crea tu cuenta</h2>
+        <p class="sub" id="subRegistro">Regístrate como estudiante y empieza a sumar puntos</p>
+
+        <div class="two">
+          <div>
+            <label for="rNombre">Nombre</label>
+            <div class="field"><input id="rNombre" type="text" placeholder="Laura" autocomplete="given-name" maxlength="100"></div>
+          </div>
+          <div>
+            <label for="rApellido">Apellido</label>
+            <div class="field"><input id="rApellido" type="text" placeholder="Pérez" autocomplete="family-name" maxlength="100"></div>
+          </div>
+        </div>
+
+        <label for="rCorreo">Correo electrónico</label>
+        <div class="field">
+          <svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <input id="rCorreo" type="email" placeholder="tunombre@correo.com" autocomplete="email" maxlength="150">
+        </div>
+
+        <label for="rDocumento">Documento de identidad</label>
+        <div class="field">
+          <svg class="ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M14 10h4M14 14h4M6 16c.5-1.5 5.5-1.5 6 0"/></svg>
+          <input id="rDocumento" type="text" inputmode="numeric" placeholder="Solo números" maxlength="20">
+        </div>
+
+        <label for="rInstitucion">Institución</label>
+        <div class="field">
+          <svg class="ico" viewBox="0 0 24 24"><path d="M3 10l9-6 9 6M5 10v9h14v-9M9 19v-5h6v5"/></svg>
+          <select id="rInstitucion"><option value="">Cargando…</option></select>
+        </div>
+
+        <label for="rGrupo">Grupo</label>
+        <div class="field">
+          <svg class="ico" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.5 2.7-5.5 6-5.5s6 2 6 5.5M15 15c3 0 6 1.3 6 4.5"/></svg>
+          <select id="rGrupo" disabled><option value="">Primero elige tu institución</option></select>
+        </div>
+
+        <div>
+          <label for="rClave">Contraseña</label>
+          <div class="field">
+            <svg class="ico" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+            <input id="rClave" type="password" placeholder="Mínimo 8, con letras y números" autocomplete="new-password" maxlength="72">
+            <button type="button" class="eye" data-eye="rClave" aria-label="Mostrar contraseña">
+              <svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+          <div class="fuerza" id="fuerza" hidden>
+            <div class="fuerza-barras" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <span class="fuerza-txt" id="fuerzaTxt" aria-live="polite"></span>
+            <ul class="reqs" id="reqs">
+              <li data-req="len">8+ caracteres</li><li data-req="let">Letras</li><li data-req="num">Números</li>
+            </ul>
+          </div>
+          <label for="rClave2">Confirmar contraseña</label>
+          <div class="field">
+            <svg class="ico" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+            <input id="rClave2" type="password" placeholder="Repite la contraseña" autocomplete="new-password" maxlength="72">
+            <button type="button" class="eye" data-eye="rClave2" aria-label="Mostrar contraseña">
+              <svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <label class="check terms"><input type="checkbox" id="rAcepta">
+          <span>Acepto el tratamiento de mis datos personales (Ley 1581 de 2012). Si soy menor de edad, mi acudiente lo autoriza.</span>
+        </label>
+
+        <p class="msg" id="msgRegistro" role="alert"></p>
+        <button class="btn-primary" type="submit" id="btnRegistro">Crear cuenta</button>
+        <p class="foot">¿Ya tienes cuenta? <a href="#" data-goto="login">Inicia sesión</a></p>
+      </form>
+
+      <!-- ===== SESIÓN ACTIVA ===== -->
+      <div id="vistaSesion" class="hidden session">
+        <div class="avatar" id="sesIni">E</div>
+        <h2 id="sesNombre">Hola</h2>
+        <p class="sub" id="sesDetalle"></p>
+        <p class="msg ok" id="sesAviso"></p>
+        <button class="btn-primary" type="button" id="btnSalir">Cerrar sesión</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

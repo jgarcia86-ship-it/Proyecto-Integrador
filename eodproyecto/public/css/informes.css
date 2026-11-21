@@ -1,0 +1,19 @@
+/* Módulo Informes y estadísticas (se apoya en .cp-* de campanas.css y .rs-* de residuos.css) */
+.inf-barra{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.inf-barra .rs-select{padding:10px 14px;font-size:13.5px}
+.inf-fila{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px;align-items:stretch}
+
+/* Barras por tipo */
+.inf-barras{display:flex;align-items:flex-end;justify-content:space-around;gap:10px;min-height:250px}
+.inf-col{flex:1;min-width:0;max-width:120px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.inf-val{font-size:11.5px;font-weight:700;color:var(--verde-900);white-space:nowrap}
+.inf-pista{width:100%;max-width:46px;height:150px;display:flex;align-items:flex-end}
+.inf-pista i{display:block;width:100%;border-radius:6px 6px 0 0;transition:height .5s ease}
+.inf-nom{font-size:11.5px;color:#41607a;text-align:center;line-height:1.25;overflow-wrap:break-word}
+
+/* Ranking */
+.inf-pos{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;font-weight:700;font-size:13px;color:var(--verde-900)}
+.inf-pos.top1{background:#f6dc7a}.inf-pos.top2{background:#dfe4e0}.inf-pos.top3{background:#f0c9a2}
+
+@media (max-width:980px){.inf-fila{grid-template-columns:1fr}}
+@media (max-width:760px){.cp-banner .cp-art{display:none}}

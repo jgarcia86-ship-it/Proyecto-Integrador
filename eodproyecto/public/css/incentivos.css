@@ -1,0 +1,80 @@
+/* Módulo Incentivos y canje (se apoya en los estilos .cp-* de campanas.css y .rs-* de residuos.css) */
+a.cp-tab{text-decoration:none;display:inline-block}
+.cp svg.rs-chart{fill:none;stroke:none}
+
+/* Catálogo: rejilla de premios + columna "¿Cómo funciona?" */
+.in-layout{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:16px;align-items:start}
+.in-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.in-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--borde);border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(27,74,42,.05);transition:transform .15s,box-shadow .15s}
+.in-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(27,74,42,.12)}
+.in-card.off{opacity:.62}
+.in-img{position:relative;height:130px;overflow:hidden;flex:none;background:linear-gradient(160deg,#e3f0d9,#f1f8ea);display:grid;place-items:center}
+.in-img img{position:absolute;inset:0;width:100%;height:100%;max-width:100%;max-height:100%;box-sizing:border-box;object-fit:contain;padding:8px}
+.in-ico{width:56px;height:56px;border-radius:50%;background:#fff;color:var(--verde-900);display:none;place-items:center;flex:none}
+.in-ico svg{width:28px;height:28px}
+.in-img.sin-img .in-ico{display:grid}
+.in-retirado{position:absolute;top:8px;left:8px;background:#e9ecea;color:#4a554e;font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px}
+.in-cuerpo{display:flex;flex-direction:column;gap:6px;padding:12px 14px 14px;flex:1}
+.in-cuerpo h3{font-size:15px;font-weight:700;color:var(--verde-900);line-height:1.25}
+.in-cuerpo p{font-size:12.5px;color:var(--gris);line-height:1.4;min-height:35px}
+.in-precio{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}
+.in-precio b{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--verde-900)}
+.in-precio b svg{width:17px;height:17px;stroke:#d9a400;fill:#f6dc7a}
+.in-precio small{font-size:12px;color:var(--gris)}
+.in-btn{width:100%;justify-content:center;margin-top:6px;padding:9px 12px;font-size:13.5px}
+
+/* Columna informativa */
+.in-info{background:linear-gradient(160deg,#e3f1d8,#f1f8ea);border:1px solid var(--borde);border-radius:16px;padding:18px 18px 8px}
+.in-info h2{display:flex;align-items:center;gap:8px;font-size:17px;font-weight:800;color:var(--verde-900);margin-bottom:12px}
+.in-info h2 svg{width:20px;height:20px}
+.in-paso{display:flex;align-items:flex-start;gap:10px;margin-bottom:14px}
+.in-paso b{display:block;font-size:13.5px;color:var(--verde-900)}
+.in-paso small{font-size:12px;color:#41607a;line-height:1.4}
+
+/* Ventanas (canje, entrega, cancelación) */
+.in-conf{background:var(--verde-100);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.in-conf b{color:var(--verde-900);font-size:15px}
+.in-conf span{font-size:13px;color:#2d3f33}
+.in-cuenta{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.in-cuenta div{background:#f6faf2;border:1px solid var(--borde);border-radius:12px;padding:10px;text-align:center}
+.in-cuenta span{display:block;font-size:12px;color:var(--gris)}
+.in-cuenta b{font-size:16px;color:var(--verde-900)}
+.in-check{flex-direction:row !important;align-items:center;gap:10px !important;font-weight:500 !important;color:var(--texto) !important}
+.in-check input{width:18px !important;height:18px;padding:0 !important;accent-color:var(--verde-700)}
+.in-input-cod{font-size:20px !important;letter-spacing:2px;text-align:center;font-weight:700}
+.in-exito{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;padding:6px 0}
+.in-exito > b{font-size:19px;color:var(--verde-900)}
+.in-exito > span{font-size:13.5px;color:#2d3f33}
+.in-exito > small{font-size:12.5px;color:var(--gris)}
+.in-exito-ic{width:52px;height:52px;border-radius:50%;background:#e3f0d9;color:var(--verde-700);display:grid;place-items:center}
+.in-exito-ic svg{width:28px;height:28px;stroke-width:2.4}
+.in-codigo-grande{font-size:30px;font-weight:800;letter-spacing:3px;color:var(--verde-900);background:#f3f9ee;border:2px dashed var(--verde-500);border-radius:14px;padding:12px 22px}
+
+/* Canjes del estudiante */
+.in-canjes{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+.in-canje{background:#fff;border:1px solid var(--borde);border-radius:14px;padding:14px 16px;box-shadow:0 2px 8px rgba(27,74,42,.05);display:flex;flex-direction:column;gap:12px}
+.in-canje-cab{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center}
+.in-canje-cab .in-ico{display:grid;width:44px;height:44px;background:var(--verde-100)}
+.in-canje-cab .in-ico svg{width:22px;height:22px}
+.in-canje-cab b{display:block;font-size:14.5px;color:var(--verde-900)}
+.in-canje-cab small{font-size:12px;color:var(--gris)}
+.in-codigo{background:#f3f9ee;border:2px dashed var(--verde-500);border-radius:12px;padding:10px 14px;text-align:center;display:flex;flex-direction:column;gap:2px}
+.in-codigo span{font-size:12px;font-weight:600;color:var(--gris)}
+.in-codigo b{font-size:26px;letter-spacing:3px;color:var(--verde-900)}
+.in-codigo small{font-size:12px;color:var(--gris)}
+.in-pie{font-size:13px;color:#2d3f33;line-height:1.5}
+
+/* Tabla de canjes (docente / administrador) */
+.in-acc{white-space:nowrap}
+.in-acc .cp-btn{margin-left:4px}
+
+@media (max-width:1100px){
+  .in-layout{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .in-cuenta{grid-template-columns:1fr}
+  .in-canjes{grid-template-columns:1fr}
+  .in-canje-cab{grid-template-columns:auto minmax(0,1fr)}
+  .in-canje-cab .cp-pill{grid-column:1 / -1;justify-self:start}
+  .rs-tabla{min-width:760px}
+}
